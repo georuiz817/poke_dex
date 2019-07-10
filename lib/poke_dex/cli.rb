@@ -8,15 +8,18 @@ class PokeDex::CLI
  
  def list_pokemon
    @pokemons = PokeDex::Dex.all 
-   @pokemons.each do |dex|   
-     puts "1.#{dex.name}"
-   end
+   @pokemons.each do |dex_1,dex_2,dex_3,dex_4,dex_5|   
+     puts "1.#{dex_1.name}"
+     puts "2.#{dex_2.name}"
+     puts "3.#{dex_3.name}"
+     puts "4.#{dex_4.name}"
+     puts "5.#{dex_5.name}"
+
+      end
  end
  
   
-
-  
-  def menu
+def menu
   puts "Welcome to the Pokedex! Trainer, choose the Pokemon you'd like get more information on or enter quit to exit the Pokedex."
   input = gets.strip 
   if input == "1" 
