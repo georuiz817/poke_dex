@@ -1,11 +1,6 @@
 class PokeDex::Dex 
 attr_accessor :name, :gen, :type, :catch_rate
 
-def self.all 
-self.scrape_pokemons
-end 
-
-
 def self.scrape_pokemons 
   pokemons = []
   pokemons << self.scrape_bulbapedia 

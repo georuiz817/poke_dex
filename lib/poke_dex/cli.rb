@@ -7,8 +7,8 @@ class PokeDex::CLI
  end
  
  def list_pokemon
-   @pokemons = PokeDex::Dex.all 
-   @pokemons.each do |dex_1,dex_2,dex_3,dex_4,dex_5|   
+   @pokemons = PokeDex::Dex.scrape_pokemons 
+     @pokemons.each do |dex_1,dex_2,dex_3,dex_4,dex_5| 
      puts "1.#{dex_1.name}"
      puts "2.#{dex_2.name}"
      puts "3.#{dex_3.name}"

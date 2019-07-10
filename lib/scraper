@@ -1,0 +1,6 @@
+require 'open-uri'
+require 'nokogiri'
+
+doc = file.open("https://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pok%C3%A9mon)")
+
+doc 
