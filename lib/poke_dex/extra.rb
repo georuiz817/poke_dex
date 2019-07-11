@@ -1,30 +1,5 @@
-require './lib/poke_dex/dex'
-class PokeDex::CLI
-  
- def call
-   list_pokemon
-   menu
-  
- end
- 
- def list_pokemon
-   @pokemons = PokeDex::Dex.scrape_pokemons 
-     @pokemons.each do |dex_1,dex_2,dex_3,dex_4,dex_5| 
-     puts "1.#{dex_1.name}"
-     puts "2.#{dex_2.name}"
-     puts "3.#{dex_3.name}"
-     puts "4.#{dex_4.name}"
-     puts "5.#{dex_5.name}"
-   end
- end
- 
-  
-def menu
-  puts "Welcome to the Pokedex! Trainer, choose the Pokemon you'd like get more information on or enter quit to exit the Pokedex."
-  level_one
- end
-   
- def level_one
+module PokeDex::Extra 
+   def level_one
    @pokemons = PokeDex::Dex.scrape_pokemons
    @pokemons.each do |dex_1,dex_2,dex_3,dex_4,dex_5| 
    input = gets.strip 
@@ -90,9 +65,11 @@ end
   puts ""
   puts "Thanks for using the Pokedex!"
 end
+  
+  
 
 
 
-end
+
 
 end
