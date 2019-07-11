@@ -6,36 +6,36 @@ module PokeDex::Extra
    input = gets.strip 
    case input
     when "1"
-    puts "Here is Bulbasaurs information:"
-    puts "generation:#{dex_1.gen}"
-    puts "type:#{dex_1.type}"
-    puts "catch rate:#{dex_1.catch_rate}"
+    puts "name: #{dex_1.name}"
+    puts "generation: #{dex_1.gen}"
+    puts "type: #{dex_1.type}"
+    puts "catch rate: #{dex_1.catch_rate}"
     puts ""
     level_2
     
     when "2" 
-    puts "Here is Pikachus information:"
+    puts "name: #{dex_2.name}"
     puts "genereation: #{dex_2.gen}"
     puts "type: #{dex_2.type}"
     puts "catch rate: #{dex_2.catch_rate}"
     level_2
     
     when "3"
-      puts "Here is Shuckles information:"
+      puts "name: #{dex_3.name}"
       puts "genereation: #{dex_3.gen}"
       puts "type: #{dex_3.type}"
       puts "catch rate: #{dex_3.catch_rate}"
      level_2
     
     when "4"
-      puts "Here is Rolycolys information:"
+      puts "name: #{dex_4.name}"
       puts "genereation: #{dex_4.gen}"
       puts "type: #{dex_4.type}"
       puts "catch rate: #{dex_4.catch_rate}"
      level_2
       
     when "5"
-      puts "Here is Mareeps information:"
+      puts "name: #{dex_5.name}"
       puts "genereation: #{dex_5.gen}"
       puts "type: #{dex_5.type}"
       puts "catch rate: #{dex_5.catch_rate}"
