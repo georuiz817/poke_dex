@@ -1,3 +1,4 @@
+require './lib/poke_dex/dex'
 module PokeDex::Extra 
    def level_one
    @pokemons = PokeDex::Dex.scrape_pokemons
@@ -39,6 +40,9 @@ module PokeDex::Extra
       puts "type: #{dex_5.type}"
       puts "catch rate: #{dex_5.catch_rate}"
      level_2
+     
+     when "quit"
+       quit
    else  
    puts "Error wrong input refreshing"
    puts""
@@ -46,12 +50,14 @@ module PokeDex::Extra
    menu 
   end
 end
+end
 
 def level_2
 puts "Would you like to go back and view additional pokemon?(y/n)"
 input = gets.strip
 case input
 when "y"
+list_pokemon
 menu 
 when "n"
 quit
@@ -61,15 +67,7 @@ level_2
   end
 end
 
- def quit 
-  puts ""
-  puts "Thanks for using the Pokedex!"
-end
+
   
   
-
-
-
-
-
 end
