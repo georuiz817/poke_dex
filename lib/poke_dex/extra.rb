@@ -7,7 +7,7 @@ module PokeDex::Extra
    case input
     when "1"
     puts "name: #{dex_1.name}"
-    puts "generation: #{dex_1.gen}"
+    puts "Behavior: #{dex_1.gen}"
     puts "type: #{dex_1.type}"
     puts "catch rate: #{dex_1.catch_rate}"
     puts ""

@@ -11,8 +11,8 @@ def self.scrape_bulbapedia
 doc = Nokogiri::HTML(open("https://pokemon.fandom.com/wiki/Bulbasaur"))
 dex_1 = self.new 
 dex_1.name = doc.search("h1.page-header__title").text.strip
-dex_1.gen = "2"
-dex_1.type ="Grass/Poision"
+dex_1.gen = doc.search("span#Behavior.mw-headline").text.strip
+dex_1.type =doc.search("span.t-type.type-grass").first.text.strip
 dex_1.catch_rate ="5%"
 
 dex_2=self.new 
