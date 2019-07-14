@@ -16,12 +16,14 @@ module PokeDex::Extra
     puts "Name: #{dex_2.name}"
     puts "#{dex_2.gen}"
     puts "Type: #{dex_2.type}"
+    puts ""
     level_2
     
     when "3"
       puts "Name: #{dex_3.name}"
       puts "#{dex_3.gen}"
       puts "Type: #{dex_3.type}"
+      puts""
      level_2
     
      when "quit"
@@ -40,6 +42,7 @@ puts "Would you like to go back and view additional pokemon?(y/n)"
 input = gets.strip
 case input
 when "y"
+puts""
 list_pokemon
 menu 
 when "n"
