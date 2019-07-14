@@ -7,20 +7,20 @@ module PokeDex::Extra
    case input
     when "1"
     puts "Name: #{dex_1.name}"
-    puts "Generation: #{dex_1.gen}"
+    puts "#{dex_1.gen}"
     puts "Type: #{dex_1.type}"
     puts ""
     level_2
     
     when "2" 
     puts "Name: #{dex_2.name}"
-    puts "Generation: #{dex_2.gen}"
+    puts "#{dex_2.gen}"
     puts "Type: #{dex_2.type}"
     level_2
     
     when "3"
       puts "Name: #{dex_3.name}"
-      puts "Generation: #{dex_3.gen}"
+      puts "#{dex_3.gen}"
       puts "Type: #{dex_3.type}"
      level_2
     
