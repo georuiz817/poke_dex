@@ -6,36 +6,24 @@ module PokeDex::Extra
    input = gets.strip 
    case input
     when "1"
-    puts "name: #{dex_1.name}"
-    puts "generation: #{dex_1.gen}"
-    puts "type: #{dex_1.type}"
+    puts "Name: #{dex_1.name}"
+    puts "Generation: #{dex_1.gen}"
+    puts "Type: #{dex_1.type}"
     puts ""
     level_2
     
     when "2" 
-    puts "name: #{dex_2.name}"
-    puts "genereation: #{dex_2.gen}"
-    puts "type: #{dex_2.type}"
+    puts "Name: #{dex_2.name}"
+    puts "Generation: #{dex_2.gen}"
+    puts "Type: #{dex_2.type}"
     level_2
     
     when "3"
-      puts "name: #{dex_3.name}"
-      puts "genereation: #{dex_3.gen}"
-      puts "type: #{dex_3.type}"
+      puts "Name: #{dex_3.name}"
+      puts "Generation: #{dex_3.gen}"
+      puts "Type: #{dex_3.type}"
      level_2
     
-    when "4"
-      puts "name: #{dex_4.name}"
-      puts "genereation: #{dex_4.gen}"
-      puts "type: #{dex_4.type}"
-     level_2
-      
-    when "5"
-      puts "name: #{dex_5.name}"
-      puts "genereation: #{dex_5.gen}"
-      puts "type: #{dex_5.type}"
-     level_2
-     
      when "quit"
        quit
    else  
