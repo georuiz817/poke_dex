@@ -8,9 +8,9 @@ def self.scrape_pokemons
 end 
 
 def self.scrape_bulbapedia 
-doc = Nokogiri::HTML(open("https://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pok%C3%A9mon)"))
+doc = Nokogiri::HTML(open("https://pokemon.fandom.com/wiki/Bulbasaur"))
 dex_1 = self.new 
-dex_1.name = "bulbasaur"
+dex_1.name = doc.search("h1.page-header__title").text.strip
 dex_1.gen = "2"
 dex_1.type ="Grass/Poision"
 dex_1.catch_rate ="5%"
@@ -27,19 +27,9 @@ dex_3.gen = "2"
 dex_3.type = "Ground"
 dex_3.catch_rate = "10%"
 
-dex_4 = self.new 
-dex_4.name ="Rolycoly"
-dex_4.gen = "8"
-dex_4.type = "Ground"
-dex_4.catch_rate ="unknown"
-
-dex_5 = self.new 
-dex_5.name = "Sheep"
-dex_5.gen ="2"
-dex_5.type = "Electric"
-dex_5.catch_rate = "10%"
 
 
-[dex_1,dex_2,dex_3,dex_4,dex_5]
+
+[dex_1,dex_2,dex_3]
 end
 end
