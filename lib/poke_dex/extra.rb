@@ -2,7 +2,7 @@ require './lib/poke_dex/dex'
 module PokeDex::Extra 
    def level_one
    @pokemons = PokeDex::Dex.scrape_pokemons
-   @pokemons.each do |dex_1,dex_2,dex_3,dex_4,dex_5| 
+   @pokemons.each do |dex_1,dex_2,dex_3| 
    input = gets.strip 
    case input
     when "1"
