@@ -10,6 +10,7 @@ module PokeDex::Extra
     puts "Type: #{dex_1.type}"
     puts "Height: #{dex_1.height}"
     puts "Weight: #{dex_1.weight}"
+    puts "Physiology: #{dex_1.phy}"
     puts "#{dex_1.gen}"
     puts ""
     level_2
@@ -19,6 +20,7 @@ module PokeDex::Extra
     puts "Type: #{dex_2.type}"
     puts "Height: #{dex_2.height}"
     puts "Weight: #{dex_2.weight}"
+    puts "Physiology: #{dex_2.phy}"
     puts "#{dex_2.gen}"
     puts ""
     level_2
@@ -28,6 +30,7 @@ module PokeDex::Extra
       puts "Type: #{dex_3.type}"
       puts "Height: #{dex_3.height}"
       puts "Weight: #{dex_3.weight}"
+      puts "Physiology: #{dex_3.phy}"
       puts "#{dex_3.gen}"
       puts""
      level_2

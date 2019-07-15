@@ -1,3 +1,6 @@
+#About the PokeDex 
+Welcome to my PokeDex! This is my first FlatIron project. I have a simple CLI PokeDex for you. All you need to do is put in a int 1-3 and you will be given details on the specific pokemon. You will then have the option to go back and few any additional ones. You may quit at any point in time and you will be given many options to quit, go back, etc at all times. Thanks! 
+
 # PokeDex
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/poke_dex`. To experiment with that code, run `bin/console` for an interactive prompt.
