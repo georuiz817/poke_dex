@@ -6,33 +6,36 @@ module PokeDex::Extra
    input = gets.strip 
    case input
     when "1"
-    puts "Name: #{dex_1.name}"
-    puts "Type: #{dex_1.type}"
-    puts "Height: #{dex_1.height}"
-    puts "Weight: #{dex_1.weight}"
-    puts "Physiology: #{dex_1.phy}"
-    puts "#{dex_1.gen}"
-    puts ""
+    puts <<~DOC
+    Name: #{dex_1.name}
+    Generation: #{dex_1.gen}
+    Type: #{dex_1.type}
+    Height: #{dex_1.height}
+    Weight: #{dex_1.weight}
+    Physiology: #{dex_1.phy}
+    DOC
     level_2
     
     when "2" 
-    puts "Name: #{dex_2.name}"
-    puts "Type: #{dex_2.type}"
-    puts "Height: #{dex_2.height}"
-    puts "Weight: #{dex_2.weight}"
-    puts "Physiology: #{dex_2.phy}"
-    puts "#{dex_2.gen}"
-    puts ""
+    puts <<~DOC 
+    Name: #{dex_2.name}
+    Generation: #{dex_2.gen}
+    Type: #{dex_2.type}
+    Height: #{dex_2.height}
+    Weight: #{dex_2.weight}
+    Physiology: #{dex_2.phy}
+    DOC
     level_2
     
     when "3"
-      puts "Name: #{dex_3.name}"
-      puts "Type: #{dex_3.type}"
-      puts "Height: #{dex_3.height}"
-      puts "Weight: #{dex_3.weight}"
-      puts "Physiology: #{dex_3.phy}"
-      puts "#{dex_3.gen}"
-      puts""
+      puts <<~DOC 
+      Name: #{dex_3.name}
+      Generation: #{dex_3.gen}
+      Type: #{dex_3.type}
+      Height: #{dex_3.height}
+      Weight: #{dex_3.weight}
+      Physiology: #{dex_3.phy}
+      DOC
      level_2
     
      when "quit"
