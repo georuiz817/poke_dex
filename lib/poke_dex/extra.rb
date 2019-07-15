@@ -2,7 +2,7 @@ require './lib/poke_dex/dex'
 module PokeDex::Extra 
    def level_one
    @pokemons = PokeDex::Dex.scrape_pokemons
-   @pokemons.each do |dex_1,dex_2,dex_3| 
+   @pokemons.each do |dex_1,dex_2,dex_3,dex_4| 
    input = gets.strip 
    case input
     when "1"
@@ -35,6 +35,17 @@ module PokeDex::Extra
       Height: #{dex_3.height}
       Weight: #{dex_3.weight}
       Physiology: #{dex_3.phy}
+      DOC
+     level_2
+     
+     when "4"
+      puts <<~DOC
+      Name: #{dex_4.name}
+      Generation: #{dex_4.gen}
+      Type: #{dex_4.type}
+      Height: #{dex_4.height}
+      Weight: #{dex_4.weight}
+      Physiology: #{dex_4.phy}
       DOC
      level_2
     

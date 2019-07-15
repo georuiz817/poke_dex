@@ -44,6 +44,18 @@ dex_3.height = doc_3.search("#mw-content-text > aside > section:nth-child(7) > s
 dex_3.weight = doc_3.search("#mw-content-text > aside > section:nth-child(7) > section:nth-child(1) > section.pi-smart-group-body > div:nth-child(2) > span").text
 dex_3.phy = doc_3.search("#mw-content-text > p:nth-child(6)").text
 
-[dex_1,dex_2,dex_3]
+#divider
+#### 
+doc_4 = Nokogiri::HTML(open("https://pokemon.fandom.com/wiki/Mareep"))
+
+dex_4 = self.new 
+dex_4.name = doc_4.search("h1.page-header__title").first.text
+dex_4.gen = doc_4.search("#mw-content-text > aside > section:nth-child(3) > section:nth-child(1) > section.pi-smart-group-body > div > a").text
+dex_4.type = doc_4.search("span.t-type2").first.text
+dex_4.height = doc_4.search("#mw-content-text > aside > section:nth-child(7) > section:nth-child(2) > section.pi-smart-group-body > div:nth-child(1) > span").text 
+dex_4.weight = doc_4.search("#mw-content-text > aside > section:nth-child(7) > section:nth-child(1) > section.pi-smart-group-body > div:nth-child(2) > span").text
+dex_4.phy = doc_4.search("#mw-content-text > p:nth-child(6)").text
+
+[dex_1,dex_2,dex_3,dex_4]
 end
 end
