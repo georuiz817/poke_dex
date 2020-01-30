@@ -1,5 +1,9 @@
 #About the PokeDex 
-Welcome to my PokeDex! This is my first FlatIron project. I have a simple CLI PokeDex for you. All you need to do is put in a int 1-3 and you will be given details on the specific pokemon. You will then have the option to go back and few any additional ones. You may quit at any point in time and you will be given many options to quit, go back, etc at all times. Thanks! ./bin/poke-dex will give you the option to run the program.
+Welcome to the PokeDex! This is my first FlatIron project. I have a simple CLI that works as a pokedex for you.
+
+Boiler plate installation instructions are below
+
+Once properly installed use  ruby ./bin/poke-dex - to start the program
 
 # PokeDex
 
